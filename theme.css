@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap");
+
 body {
 	--radius-s: 0px;
 	--radius-m: 0px;
@@ -8,9 +10,11 @@ body {
 	--toggle-radius: 0px;
 	--toggle-thumb-radius: 0px;
 	--slider-thumb-radius: 0px;
+	--font-text-theme: "Xanh Mono", monospace;
 }
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
 	display: none;
 }
 
@@ -31,4 +35,14 @@ svg * {
 
 .menu-separator {
 	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+.theme-light {
+	--background-primary: #f2f1ef;
+	--background-secondary: #e0e5d9;
+}
+
+.theme-dark {
+	--background-primary: #1d2b2d;
+	--background-secondary: #35463e;
 }
